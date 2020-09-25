@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="ISO-8859-15" standalone="no"?><uc-export clientvers="11.0.0">
+<PRPT name="PCK.AUTOMIC_AIX.PRV.PROMPTSET.REMOVE">
+<HEADER state="1">
+<Title/>
+<ArchiveKey1/>
+<ArchiveKey2/>
+<OH_SubType/>
+</HEADER>
+<PROMPTDESIGNER state="1">
+<DESIGNER/>
+</PROMPTDESIGNER>
+<PROMPTSETXUI state="1">
+<XUIEDITOR><![CDATA[<dialog height="506" icon="PRPT" id="PRPTS" left="279" top="4" width="420"><readpanel fill="b" id="PRPTBOX" nl="1" scroll="v" text="Parameters"><properties><entry name="text">Parameters</entry><entry name="modifiable">0</entry></properties><text enabled="1" fill="b" focus="0" id="UC4RB_FILESET_NAMEs.00" inputassistance="0" len="" nl="1" regex="" separator=";" showaspassword="0" text="Fileset name" tooltip="This is the name of the software product to be removed and can specify either an entire software product or any separately removable filesets within the software product." upper="0" required="0" alt="1" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant><properties><entry listparam="C" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry><entry name="text">Fileset name</entry><entry name="multiselect">0</entry><entry name="separator">;</entry><entry name="len"/><entry name="quotes"/><entry name="id">UC4RB_FILESET_NAMEs.00</entry><entry name="inputassistance">0</entry><entry name="enabled">0</entry><entry name="upper">0</entry><entry name="focus">0</entry><entry name="showaspassword">0</entry><entry name="tooltip">This is the name of the software product to be removed and can specify either an entire software product or any separately removable filesets within the software product.</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="regex"/><entry name="required">1</entry><entry name="initvalue"/><entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties></text><text enabled="1" fill="b" focus="0" id="UC4RB_FILESET_LEVELs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Fileset level" tooltip="This indicates the level of the software product is to be removed and is of the form vv.rr.mmmm.ffff. If a fileset has an additional fix ID (also know as ptf id), that ID must also be specified in the Level as in vv.rr.mmmm.ffff.ppppppp" upper="0" alt="1" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant><properties><entry listparam="C" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry><entry name="text">Fileset level</entry><entry name="multiselect">0</entry><entry name="separator">;</entry><entry name="len"/><entry name="quotes"/><entry name="id">UC4RB_FILESET_LEVELs.00</entry><entry name="inputassistance">0</entry><entry name="enabled">0</entry><entry name="upper">0</entry><entry name="focus">0</entry><entry name="showaspassword">0</entry><entry name="tooltip">This indicates the level of the software product is to be removed and is of the form vv.rr.mmmm.ffff. If a fileset has an additional fix ID (also know as ptf id), that ID must also be specified in the Level as in vv.rr.mmmm.ffff.ppppppp</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="regex"/><entry name="required">0</entry><entry name="initvalue"/><entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties></text><text enabled="1" fill="b" focus="0" id="UC4RB_FILESET_LISTFILEs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Fileset list from file" tooltip="Reads the names of the software products    from a list file defined in this parameter. Software fileset names, optionally    followed by a level, should be one per line of    text, and any text following the second set of    white spaces or tabs on a line is ignored. Output    from the installp -l command is suitable for    input to this flag. Uses the option &quot;-f&quot; at command    line, if parameter not empty." upper="0" alt="1" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant><properties><entry listparam="C" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry><entry name="text">Fileset list from file</entry><entry name="multiselect">0</entry><entry name="separator">;</entry><entry name="len"/><entry name="quotes"/><entry name="id">UC4RB_FILESET_LISTFILEs.00</entry><entry name="inputassistance">0</entry><entry name="enabled">0</entry><entry name="upper">0</entry><entry name="focus">0</entry><entry name="showaspassword">0</entry><entry name="tooltip">Reads the names of the software products
+
+from a list file defined in this parameter. Software fileset names, optionally
+
+followed by a level, should be one per line of
+
+text, and any text following the second set of
+
+white spaces or tabs on a line is ignored. Output
+
+from the installp -l command is suitable for
+
+input to this flag. Uses the option &quot;-f&quot; at command
+
+line, if parameter not empty.</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="regex"/><entry name="required">0</entry><entry name="initvalue"/><entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties></text><dynradiogroup enabled="1" fill="b" focus="0" id="UC4RB_SUPR_FILESET_WCARDs.00" nl="1" quotes="" text="Supress fileset wildcard" tooltip="Does not wildcard the fileset name defined in this parameter. Use this flag    from smit so it only removes the fileset    chosen and not the filesets that match. For    example, if you choose foo.rte, foo.rte.bar is    not automatically pulled in, as it would be by    default, without setting this parameter to &apos;yes&apos;    Uses the option &quot;-w&quot; at command line if parameter    set to &apos;yes&apos;." alt="1" required="0"><properties><entry listparam="C" name="reference" reftype="STATIC">PCK.ITPA_SHARED.PRV.VARA.YES_NO</entry><entry name="text">Supress fileset wildcard</entry><entry name="quotes"/><entry name="id">UC4RB_SUPR_FILESET_WCARDs.00</entry><entry name="enabled">0</entry><entry name="focus">0</entry><entry name="tooltip">Does not wildcard the fileset name defined in this parameter. Use this flag
+
+from smit so it only removes the fileset
+
+chosen and not the filesets that match. For
+
+example, if you choose foo.rte, foo.rte.bar is
+
+not automatically pulled in, as it would be by
+
+default, without setting this parameter to &apos;yes&apos;
+
+Uses the option &quot;-w&quot; at command line if parameter
+
+set to &apos;yes&apos;.</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="initvalue"/><entry name="xmlkey"/><entry name="xmlpath"/></properties></dynradiogroup><dynradiogroup enabled="1" fill="b" focus="0" id="UC4RB_FAIL_IF_NOT_INSTALLEDs.00" nl="1" quotes="" text="Fail if not installed" tooltip="If set to &apos;yes&apos;, the runbook function fails if the package is not installed but trying to remove." alt="1" required="0"><properties><entry listparam="C" name="reference" reftype="STATIC">PCK.ITPA_SHARED.PRV.VARA.YES_NO</entry><entry name="text">Fail if not installed</entry><entry name="quotes"/><entry name="id">UC4RB_FAIL_IF_NOT_INSTALLEDs.00</entry><entry name="enabled">0</entry><entry name="focus">0</entry><entry name="tooltip">If set to &apos;yes&apos;, the runbook function fails if the package is not installed but trying to remove.</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="initvalue"/><entry name="xmlkey"/><entry name="xmlpath"/></properties></dynradiogroup><text enabled="1" fill="b" focus="0" id="UC4RB_LOG_FILEs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="0" text="Log file" tooltip="Enables event logging. The parameter enables    the user to append certain parts of the installp    command output to the log file specified by this parameter. By default    the output of the installp command goes to    stdout and stderr, unless SMIT or VSM is    used, in which case the output goes to the    smit.log. The log file variable &amp;UC4RB_LOG_    FILE# must specify an existing, writable file,    and the file system in which the file resides    must have enough space to store the log. The    log file does not wrap. Uses the option &quot;-e&quot; at command line, if    parameter not empty." upper="0" alt="1" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant><properties><entry listparam="C" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry><entry name="text">Log file</entry><entry name="multiselect">0</entry><entry name="separator">;</entry><entry name="len"/><entry name="quotes"/><entry name="id">UC4RB_LOG_FILEs.00</entry><entry name="inputassistance">0</entry><entry name="enabled">0</entry><entry name="upper">0</entry><entry name="focus">0</entry><entry name="showaspassword">0</entry><entry name="tooltip">Enables event logging. The parameter enables
+
+the user to append certain parts of the installp
+
+command output to the log file specified by this parameter. By default
+
+the output of the installp command goes to
+
+stdout and stderr, unless SMIT or VSM is
+
+used, in which case the output goes to the
+
+smit.log. The log file variable &amp;UC4RB_LOG_
+
+FILE# must specify an existing, writable file,
+
+and the file system in which the file resides
+
+must have enough space to store the log. The
+
+log file does not wrap. Uses the option &quot;-e&quot; at command line, if
+
+parameter not empty.</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="regex"/><entry name="required">0</entry><entry name="initvalue"/><entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties></text><integer enabled="1" fill="b" focus="0" id="UC4RB_DEBUG_LEVELs.00" max="" min="" nl="1" text="Debug level" tooltip="  Specifies the verbose option that provides four    levels of detail for preinstallation output. The    valid values for the parameter are 2, 3, or 4. The default    level of verbosity, without the use of the -V    flag, prints an alphabetically ordered list of    FAILURES, WARNINGS, and SUCCESSES    from preinstallation processing. Requisite failures    are reported with emphasis on the real    cause of the failure. Extraneous requisites for    failed filesets are not displayed. The preinstallation    output is modified by levels 2    through 4 as described below: 2: Prints alphabetically    ordered list of FAILURES and    WARNINGS. Requisite failures are displayed    with additional information describing requisite    relationships between selected filesets and    the requisites causing them to fail. Failing requisites    suppressed under Level 1 are displayed.    Preinstallation SUCCESSES are    displayed in the order in which they are processed.    3: Level 3 is the same as Level 2, with    the exception that additional requisite information    is displayed for SUCCESSES. 4:    Level 4 is the same as Level 3 for SUCCESSES    and WARNINGS. Requisite failures    are displayed in a format depicting detailed requisite    relationships. Note: If verbosity level 2    or higher is used, the files that are restored on    to the system is shown in the output. Because    this will make installp&apos;s output much more verbose,    make sure that your / (root) filesystem    does not become full when the /smit.log    becomes large (if using smit to run installp).    Uses the option &quot;-V&quot; at command line, if not -1." alt="1"><properties><entry listparam="C" name="reference" reftype="STATIC">UC_DATATYPE_NUMERIC</entry><entry name="text">Debug level</entry><entry name="min"/><entry name="max"/><entry name="quotes"/><entry name="id">UC4RB_DEBUG_LEVELs.00</entry><entry name="enabled">0</entry><entry name="focus">0</entry><entry name="tooltip">  Specifies the verbose option that provides four
+
+levels of detail for preinstallation output. The
+
+valid values for the parameter are 2, 3, or 4. The default
+
+level of verbosity, without the use of the -V
+
+flag, prints an alphabetically ordered list of
+
+FAILURES, WARNINGS, and SUCCESSES
+
+from preinstallation processing. Requisite failures
+
+are reported with emphasis on the real
+
+cause of the failure. Extraneous requisites for
+
+failed filesets are not displayed. The preinstallation
+
+output is modified by levels 2
+
+through 4 as described below: 2: Prints alphabetically
+
+ordered list of FAILURES and
+
+WARNINGS. Requisite failures are displayed
+
+with additional information describing requisite
+
+relationships between selected filesets and
+
+the requisites causing them to fail. Failing requisites
+
+suppressed under Level 1 are displayed.
+
+Preinstallation SUCCESSES are
+
+displayed in the order in which they are processed.
+
+3: Level 3 is the same as Level 2, with
+
+the exception that additional requisite information
+
+is displayed for SUCCESSES. 4:
+
+Level 4 is the same as Level 3 for SUCCESSES
+
+and WARNINGS. Requisite failures
+
+are displayed in a format depicting detailed requisite
+
+relationships. Note: If verbosity level 2
+
+or higher is used, the files that are restored on
+
+to the system is shown in the output. Because
+
+this will make installp&apos;s output much more verbose,
+
+make sure that your / (root) filesystem
+
+does not become full when the /smit.log
+
+becomes large (if using smit to run installp).
+
+Uses the option &quot;-V&quot; at command line, if not -1.</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="initvalue">0</entry></properties></integer><dynradiogroup enabled="1" fill="b" focus="0" id="UC4RB_PREVENT_BOSBOOTs.00" nl="1" quotes="" text="Prevent performing bosboot" tooltip="Prevents the system from performing a bosboot in the event that one is needed.    Uses the option &quot;-b&quot; at command line, if parameter set to &apos;yes&apos;." alt="1" required="0"><properties><entry listparam="C" name="reference" reftype="STATIC">PCK.ITPA_SHARED.PRV.VARA.YES_NO</entry><entry name="text">Prevent performing bosboot</entry><entry name="quotes"/><entry name="id">UC4RB_PREVENT_BOSBOOTs.00</entry><entry name="enabled">0</entry><entry name="focus">0</entry><entry name="tooltip">Prevents the system from performing a bosboot in the event that one is needed.
+
+Uses the option &quot;-b&quot; at command line, if parameter set to &apos;yes&apos;.</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="initvalue"/><entry name="xmlkey"/><entry name="xmlpath"/></properties></dynradiogroup><dynradiogroup enabled="1" fill="b" focus="0" id="UC4RB_REMOVE_DEPSs.00" nl="1" quotes="" text="Remove dependencies" tooltip="Use to remove or reject software, this flag automatically removes or rejects dependents of the specified software.     Uses the option &quot;-g&quot; at command line, if parameter set to &apos;yes&apos;." alt="1" required="0"><properties><entry listparam="C" name="reference" reftype="STATIC">PCK.ITPA_SHARED.PRV.VARA.YES_NO</entry><entry name="text">Remove dependencies</entry><entry name="quotes"/><entry name="id">UC4RB_REMOVE_DEPSs.00</entry><entry name="enabled">0</entry><entry name="focus">0</entry><entry name="tooltip">Use to remove or reject software, this flag automatically removes or rejects dependents of the specified software. 
+
+Uses the option &quot;-g&quot; at command line, if parameter set to &apos;yes&apos;.</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="initvalue"/><entry name="xmlkey"/><entry name="xmlpath"/></properties></dynradiogroup><dyncheckgroup enabled="1" fill="b" focus="0" id="UC4RB_REMOVE_ONLY_PARTSs.00" mode="list" nl="1" quotes="" required="0" separator=";" text="Remove only specified parts" tooltip="Remove the specified part of the software product. You can multi-select the following options:        root: indicates the / (root) part is to be removed (at command line r is used together with the option -O)        /usr/share: indicates the /usr/share part is to be removed (at command line s is used together with the option -O)        /usr/: indicates the /usr part is to be removed (at command line u is used together with the option -O)    implementation note: if all selected, nothing is generated at run time. If e.g. root and /usr/share is selected, the option &quot;-Ors&quot; is used at command line." alt="1"><properties><entry listparam="C,N" name="reference" reftype="STATIC">PCK.AUTOMIC_AIX.PRV.VARA.INSTALL_PARTS</entry><entry name="text">Remove only specified parts</entry><entry alias="multiselect" name="cgmultiselect">1</entry><entry alias="separator" name="cgseparator">;</entry><entry alias="haslist" name="cghaslist">0</entry><entry name="quotes"/><entry name="id">UC4RB_REMOVE_ONLY_PARTSs.00</entry><entry name="enabled">0</entry><entry name="focus">0</entry><entry name="tooltip">Remove the specified part of the software product. You can multi-select the following options:
+
+    root: indicates the / (root) part is to be removed (at command line r is used together with the option -O)
+
+    /usr/share: indicates the /usr/share part is to be removed (at command line s is used together with the option -O)
+
+    /usr/: indicates the /usr part is to be removed (at command line u is used together with the option -O)
+
+implementation note: if all selected, nothing is generated at run time. If e.g. root and /usr/share is selected, the option &quot;-Ors&quot; is used at command line.</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="required">0</entry><entry name="initvalue"/><entry name="xmlkey"/><entry name="xmlpath"/><entry name="onchangereset"/><entry name="resetable">1</entry></properties></dyncheckgroup><dynradiogroup enabled="1" fill="b" focus="0" id="UC4RB_PREVIEW_ONLYs.00" nl="1" quotes="" text="Preview only" tooltip="Performs a preview of an action by running all checks for the specified action.    Uses the option &quot;-p&quot; at command line, if parameter not empty." alt="1" required="0"><properties><entry listparam="C" name="reference" reftype="STATIC">PCK.ITPA_SHARED.PRV.VARA.YES_NO</entry><entry name="text">Preview only</entry><entry name="quotes"/><entry name="id">UC4RB_PREVIEW_ONLYs.00</entry><entry name="enabled">0</entry><entry name="focus">0</entry><entry name="tooltip">Performs a preview of an action by running all checks for the specified action.
+
+Uses the option &quot;-p&quot; at command line, if parameter not empty.</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="initvalue"/><entry name="xmlkey"/><entry name="xmlpath"/></properties></dynradiogroup><text enabled="1" fill="b" focus="0" id="UC4RB_SUDO_PASSWORDs.00" inputassistance="0" len="" nl="1" regex="" required="0" separator=";" showaspassword="1" text="Sudo password" tooltip="Sudo password." upper="0" alt="1" multiline="0" multilineIcon="0"><oninputassistant><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptname|@id"/><command request="_internal" target="_view" targetaction="setAttribute" targetparam="promptvalue|@value"/><command owner="_promptsetcontainer" owneraction="getData" request="getpromptinputassistance" target="_chainwindow"/></oninputassistant><properties><entry listparam="C" name="reference" reftype="STATIC">UC_DATATYPE_STRING</entry><entry name="text">Sudo password</entry><entry name="multiselect">0</entry><entry name="separator">;</entry><entry name="len"/><entry name="quotes"/><entry name="id">UC4RB_SUDO_PASSWORDs.00</entry><entry name="inputassistance">0</entry><entry name="enabled">0</entry><entry name="upper">0</entry><entry name="focus">0</entry><entry name="showaspassword">1</entry><entry name="tooltip">Sudo password.</entry><entry name="customfield"/><entry name="modifiable">1</entry><entry name="regex"/><entry name="required">0</entry><entry name="initvalue"/><entry name="xmlkey"/><entry name="xmlpath"/><entry name="multiline">0</entry><entry name="multilineIcon">0</entry><entry name="onchangereset"/><entry name="resetable">1</entry></properties></text></readpanel></dialog>]]></XUIEDITOR>
+</PROMPTSETXUI>
+<PROMPTSETDATA state="1">
+<DATAEDITOR><![CDATA[<PRPTS ontop="1"><PRPTBOX><UC4RB_FILESET_NAMEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_FILESET_NAME#" ReadFromTable="OPSE"></UC4RB_FILESET_NAMEs.00><UC4RB_FILESET_LEVELs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_FILESET_LEVEL#" ReadFromTable="OPSE"></UC4RB_FILESET_LEVELs.00><UC4RB_FILESET_LISTFILEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_FILESET_LISTFILE#" ReadFromTable="OPSE"></UC4RB_FILESET_LISTFILEs.00><UC4RB_SUPR_FILESET_WCARDs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_SUPR_FILESET_WCARD#" ReadFromTable="OPSE">NO</UC4RB_SUPR_FILESET_WCARDs.00><UC4RB_FAIL_IF_NOT_INSTALLEDs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_FAIL_IF_NOT_INSTALLED#" ReadFromTable="OPSE">NO</UC4RB_FAIL_IF_NOT_INSTALLEDs.00><UC4RB_LOG_FILEs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_LOG_FILE#" ReadFromTable="OPSE"></UC4RB_LOG_FILEs.00><UC4RB_DEBUG_LEVELs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_DEBUG_LEVEL#" ReadFromTable="OPSE">0</UC4RB_DEBUG_LEVELs.00><UC4RB_PREVENT_BOSBOOTs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_PREVENT_BOSBOOT#" ReadFromTable="OPSE">NO</UC4RB_PREVENT_BOSBOOTs.00><UC4RB_REMOVE_DEPSs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_REMOVE_DEPS#" ReadFromTable="OPSE">NO</UC4RB_REMOVE_DEPSs.00><UC4RB_REMOVE_ONLY_PARTSs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_REMOVE_ONLY_PARTS#" ReadFromTable="OPSE">root;/usr/share;/usr</UC4RB_REMOVE_ONLY_PARTSs.00><UC4RB_PREVIEW_ONLYs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_PREVIEW_ONLY#" ReadFromTable="OPSE">NO</UC4RB_PREVIEW_ONLYs.00><UC4RB_SUDO_PASSWORDs.00 haslist="0" msgnr="-1" msginsert="" altview="0" promptname="UC4RB_SUDO_PASSWORD#" ReadFromTable="OPSE"></UC4RB_SUDO_PASSWORDs.00></PRPTBOX></PRPTS>]]></DATAEDITOR>
+</PROMPTSETDATA>
+<DOCU_Docu state="1" type="text">
+<DOC/>
+</DOCU_Docu>
+</PRPT>
+</uc-export>
